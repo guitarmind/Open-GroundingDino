@@ -16,4 +16,4 @@ python3 -m torch.distributed.launch  --nproc_per_node=${GPU_NUM} main.py \
         -c ${CFG} \
         --datasets ${DATASETS}  \
         --pretrain_model_path /workspace/Github/Open-GroundingDino/gdinot-1.8m-odvg.pth \
-        --options text_encoder_type=/root/.cache/huggingface/hub/models--bert-base-uncased/snapshots/1dbc166cf8765166998eff31ade2eb64c8a40076
+        --options text_encoder_type=/workspace/Kaggle/AnomalyDetection/datasets/bert-base-uncased
