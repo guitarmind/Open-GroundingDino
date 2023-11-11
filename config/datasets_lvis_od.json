@@ -1,15 +1,15 @@
 {
   "train": [
     {
-      "root": "/home/markpeng/Kaggle/AnomalyDetection/datasets/LVIS/train2017/",
-      "anno": "/home/markpeng/Kaggle/AnomalyDetection/datasets/LVIS/lvis_v1_train_odvg.jsonl",
-      "label_map": "/home/markpeng/Kaggle/AnomalyDetection/datasets/LVIS/lvis_v1_train_label_map.json",
+      "root": "/workspace/Kaggle/AnomalyDetection/datasets/LVIS/train2017/",
+      "anno": "/workspace/Kaggle/AnomalyDetection/datasets/LVIS/lvis_v1_train_odvg.jsonl",
+      "label_map": "/workspace/Kaggle/AnomalyDetection/datasets/LVIS/lvis_v1_train_label_map.json",
       "dataset_mode": "odvg"
-    },
+    }
   ],
   "val": [
     {
-      "root": "/home/markpeng/Kaggle/AnomalyDetection/datasets/LVIS/val2017",
+      "root": "/workspace/Kaggle/AnomalyDetection/datasets/LVIS/val2017",
       "anno": "config/instances_val2017.json",
       "label_map": null,
       "dataset_mode": "coco"

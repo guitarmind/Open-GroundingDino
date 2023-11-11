@@ -11,9 +11,9 @@ MASTER_ADDR=${MASTER_ADDR:-"127.0.0.1"}
 # (e.g. GroundingDINO pretrain, DINO pretrain, Swin Transformer pretrain.)
 # If you don't want to use any pretrained model, just ignore this parameter.
 
-python -m torch.distributed.launch  --nproc_per_node=${GPU_NUM} main.py \
+python3 -m torch.distributed.launch  --nproc_per_node=${GPU_NUM} main.py \
         --output_dir ${OUTPUT_DIR} \
         -c ${CFG} \
         --datasets ${DATASETS}  \
-        --pretrain_model_path /path/to/groundingdino_swint_ogc.pth \
-        --options text_encoder_type=/path/to/bert-base-uncased
+        --pretrain_model_path /workspace/Github/Open-GroundingDino/gdinot-1.8m-odvg.pth \
+        --options text_encoder_type=/root/.cache/huggingface/hub/models--bert-base-uncased/snapshots/1dbc166cf8765166998eff31ade2eb64c8a40076
